@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(56, 61, 62) !important;
+}
+
+.heading {
+  text-align: center;
+  color: rgb(188, 181, 181);
+}
+
+.button-container {
+  text-align: center;
+}
+
+.buttons {
+  margin: 0 5px 0 5px;
+}
+
+.navbar {
+  background-color: rgb(62, 73, 77);
+}
+
+.bar-style {
+  width: 0.8vw;
+  display: inline-block;
+  background-color: yellow;
+  border-style: solid;
+  vertical-align: top;
+}
+
+#bar-container {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+#speed-bar {
+  margin-left: 10vh;
+  text-align: center;
+}
+
+#number-bar {
+  margin-left: 5vh;
+  text-align: center;
+}

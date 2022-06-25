@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="sorting.css" />
+    <link rel="stylesheet" href="bar.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h2 class="heading">Sorting Visualizer</h2>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <button
+          type="button"
+          class="btn btn-outline-primary"
+          onClick="window.location.reload()"
+        >
+          new array
+        </button>
+        <span id="speed-bar">
+          <input
+            id="sort-speed"
+            type="range"
+            min="-500"
+            max="-4"
+            step="1"
+            value="-200"
+          />
+          <h4>Speed</h4>
+        </span>
+        <span id="number-bar">
+          <input
+            id="arr-sz"
+            type="range"
+            min="10"
+            max="110"
+            step="1"
+            value="50"
+          />
+          <h4>No. of Elements</h4>
+        </span>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <button
+              type="button"
+              onClick="bubbleSort()"
+              class="buttons btn btn-outline-primary"
+            >
+              bubble sort
+            </button>
+            <button
+              type="button"
+              onClick="insertionSort()"
+              class="buttons btn btn-outline-primary"
+            >
+              insertion sort
+            </button>
+            <button
+              type="button"
+              onClick="selectionSort()"
+              class="buttons btn btn-outline-primary"
+            >
+              selection sort
+            </button>
+            <button
+              type="button"
+              onClick="quickSort()"
+              class="buttons btn btn-outline-primary"
+            >
+              quick sort
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="bar-container"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js_files/sorting.js"></script>
+    <script src="js_files/bubbleSort.js"></script>
+    <script src="js_files/insertionSort.js"></script>
+    <script src="js_files/selectionSort.js"></script>
+    <script src="js_files/quickSort.js"></script>
+    <script src="js_files/mergeSort.js"></script>
+  </body>
+</html>
